@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b9e8a716fe.js" crossorigin="anonymous"></script>
+    <!-- EmailJS SDK for sending emails -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="81298acf-99f9-4834-865c-aa85457f2cef.png" class="logo">
+                <ul>
+                    <li><a href="index.html" onclick="location.reload(); return false;">Home</a></li>
+                    <li><a href="#about">About</a></li>  
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="index.html" onclick="location.reload(); return false;">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Jitesh</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Jiteshraj.jpg" alt="Jiteshraj Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Frontend-focused developer skilled in building responsive and interactive user interfaces using HTML, CSS, and JavaScript. Experienced in developing Android applications using Python. Familiar with Python and SQL for backend logic and data handling. Passionate about creating clean UI, efficient code, and user-friendly applications, with a strong interest in continuous learning and real-world problem solving.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, React JS</li>
+                            <li><span>CSS Frameworks</span><br>Tailwind CSS, Bootstrap</li>
+                            <li><span>Backend Development</span><br>Python, FastAPI</li>
+                            <li><span>Database</span><br>Firebase</li>
+                            <li><span>Tools</span><br>Postman,Cursor,Vscode</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Online Food Ordering – Testie Fodies </span><br>A responsive online food ordering web application built using HTML, CSS, and JavaScript, allowing users to browse food items and place orders.</li>
+                            <li><span>Vegiest Online Food delivary</span><br>A frontend-based vegetable ordering website designed using HTML, CSS, and JavaScript with a clean UI and user-friendly layout.</li>
+                            <li><span>Rokonet – Medical Representative IT Management System</span><br>A backend-driven web application demonstrating practical IT system design, API development, and data management. Built with Python and FastAPI, featuring RESTful API architecture, Pydantic validation, CRUD operations for Doctors, Medical Representatives, and Sample records. Implements modular project structure with separation of concerns for scalability and maintainability.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B-TECH CSE from Shivaji University Marks: 70.20%</li>
+                            <li><span>2021</span><br>Diploma from Tatyasaheb Kore Group of Institute, Warnanagar, Kolhapur Marks: 72.20%</li>
+                            <li><span>2018</span><br>SSC from Rajapur High School, Rajapur Marks: 62.40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend API & System Development</h2>
+                    <p>I develop structured, scalable backend systems with a strong focus on API design, data validation, and clean architecture. My work emphasizes production-style backend development practices, including REST API development using FastAPI, modular code structure, CRUD operations, API lifecycle handling, and system extensibility using modern Python frameworks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development crafts dynamic websites using HTML, CSS, and JavaScript. It emphasizes user experience, aesthetics, and functionality to engage visitors and deliver valuable content and services.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Python development involves building applications, scripts, and automation using the Python programming language. It covers backend logic, data handling, scripting, and integration with databases and APIs for scalable and maintainable software solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="">
+                    <div class="layer">
+                        <h2>Online Food Ordering – Testie Fodies</h2>
+                        <p>A responsive online food ordering web application built using HTML, CSS, and JavaScript, allowing users to browse food items and place orders.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h2>Vegiest</h2>
+                        <p>A frontend-based vegetable ordering website designed using HTML, CSS, and JavaScript with a clean UI and user-friendly layout.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpeg" alt="">
+                    <div class="layer">
+                        <h2>Rokonet – MR Management System</h2>
+                        <p>Backend web app with Python & FastAPI. RESTful APIs, CRUD operations, Pydantic validation, and modular architecture.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="certificates.html" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> jiteshdesai2001@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 9021117830</p>
+                    <p><i class="fas fa-phone"></i> +91 7769997622</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Jitesh"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/jites_hh9608?igsh=N3Y4aXBoaXR1aDVv"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=919021117830&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/jiteshdesai9608/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/resume/Jitesh_Desai_resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <p class="suggestion-text">💡 Have suggestions to improve my portfolio? Please share them below.</p>
+                    <form id="suggestionForm">
+                        <input type="text" name="Name" id="userName" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="userEmail" placeholder="Your Email" required>
+                        <textarea name="Message" id="userMessage" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ JD'S. Made with <i class="fas fa-heart"></i> Er. Jitesh.J.Desai</p>
+        </div>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup-overlay">
+        <div class="popup-content">
+            <i class="fas fa-check-circle popup-icon"></i>
+            <h2>Thank You!</h2>
+            <p>Thanks for your valuable suggestion!</p>
+            <button onclick="closePopup()" class="btn">OK</button>
+        </div>
+    </div>
+
+
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Firebase imports
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        // Firebase configuration - Replace with your actual config
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // ============ SECURITY & VALIDATION FUNCTIONS ============
+
+        // Check if email is valid
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Check if name is valid (min 2 chars, only letters and spaces)
+        function isValidName(name) {
+            if (name.length < 2) return false;
+            const nameRegex = /^[a-zA-Z\s]+$/;
+            return nameRegex.test(name);
+        }
+
+        // Check for gibberish/spam patterns
+        function isGibberish(text) {
+            // Check for repeated characters (like "aaaaaaa" or "asdfasdf")
+            if (/(.)\1{4,}/.test(text)) return true;
+            
+            // Check if mostly numbers
+            const numCount = (text.match(/\d/g) || []).length;
+            if (numCount > text.length * 0.5) return true;
+            
+            // Check for keyboard smash patterns
+            const keyboardPatterns = ['asdf', 'qwer', 'zxcv', 'hjkl', '1234', 'abcd'];
+            for (let pattern of keyboardPatterns) {
+                if (text.toLowerCase().includes(pattern.repeat(2))) return true;
+            }
+            
+            // Check for too many special characters
+            const specialCount = (text.match(/[^a-zA-Z0-9\s.,!?]/g) || []).length;
+            if (specialCount > text.length * 0.3) return true;
+            
+            return false;
+        }
+
+        // Check for spam/inappropriate words
+        function containsSpam(text) {
+            const spamWords = ['test', 'testing', 'hello', 'hi', 'hey', 'xyz', 'abc', 'aaa', 'bbb', 'xxx', 'fuck', 'shit', 'damn', 'ass', 'crap'];
+            const lowerText = text.toLowerCase();
+            
+            // If message is ONLY these words
+            for (let word of spamWords) {
+                if (lowerText === word || lowerText === word + '.' || lowerText === word + '!') {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // Check if message is a genuine suggestion
+        function isValidSuggestion(message) {
+            // Minimum 20 characters for a genuine suggestion
+            if (message.length < 20) return false;
+            
+            // Must have at least 3 words
+            const wordCount = message.split(/\s+/).filter(w => w.length > 1).length;
+            if (wordCount < 3) return false;
+            
+            // Check for gibberish
+            if (isGibberish(message)) return false;
+            
+            // Check for pure spam
+            if (containsSpam(message)) return false;
+            
+            // Must contain at least some suggestion-related context
+            // (letters should be more than 50% of content)
+            const letterCount = (message.match(/[a-zA-Z]/g) || []).length;
+            if (letterCount < message.length * 0.5) return false;
+            
+            return true;
+        }
+
+        // ============ FORM SUBMISSION ============
+        const form = document.getElementById('suggestionForm');
+        if (form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const name = document.getElementById('userName').value.trim();
+                const email = document.getElementById('userEmail').value.trim();
+                const message = document.getElementById('userMessage').value.trim();
+
+                // ===== SECURITY VALIDATION =====
+                
+                // Check if fields are empty
+                if (!name || !email || !message) {
+                    location.reload();
+                    return;
+                }
+
+                // Validate name
+                if (!isValidName(name)) {
+                    location.reload();
+                    return;
+                }
+
+                // Validate email
+                if (!isValidEmail(email)) {
+                    location.reload();
+                    return;
+                }
+
+                // Validate message is a genuine suggestion
+                if (!isValidSuggestion(message)) {
+                    // Invalid/spam - just refresh page silently
+                    location.reload();
+                    return;
+                }
+
+                // ===== VALID SUGGESTION - SAVE TO FIREBASE =====
+                try {
+                    await addDoc(collection(db, "suggestions"), {
+                        name: name,
+                        email: email,
+                        message: message,
+                        createdAt: serverTimestamp()
+                    });
+
+                    // Show success popup
+                    document.getElementById('successPopup').classList.add('show');
+
+                    // Reset form
+                    form.reset();
+
+                } catch (error) {
+                    // Silent fail - just refresh
+                    location.reload();
+                }
+            });
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tabLinks = document.getElementsByClassName('tab-links');
+            var tabContents = document.getElementsByClassName('tab-contents');
+
+            function openTab(tabName) {
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove('active-link');
+                }
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove('active-tab');
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabName).classList.add('active-tab');
+            }
+            window.openTab = openTab;
+
+            var barsEl = document.querySelector('.fas.fa-bars');
+            var timesEl = document.querySelector('.fas.fa-times');
+            if (barsEl) barsEl.addEventListener('click', function () {
+                document.querySelector('nav ul').classList.toggle('show');
+            });
+            if (timesEl) timesEl.addEventListener('click', function () {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+        });
+
+        // Close popup and refresh
+        function closePopup() {
+            document.getElementById('successPopup').classList.remove('show');
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

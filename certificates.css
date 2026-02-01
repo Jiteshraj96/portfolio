@@ -1,0 +1,420 @@
+/* ----------CERTIFICATES PAGE STYLES---------- */
+
+.cert-header {
+    background: #080808;
+    padding: 16px 0;
+    border-bottom: 1px solid #262626;
+}
+
+.cert-header nav ul li a {
+    color: #fff;
+}
+
+.page-title {
+    padding: 40px 16px;
+    text-align: center;
+    background: linear-gradient(135deg, #080808 0%, #1a1a2e 100%);
+}
+
+.page-title h1 {
+    font-size: 28px;
+}
+
+.page-title p {
+    color: #ababab;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #4a60ee;
+    display: inline-block;
+}
+
+.section-title i {
+    color: #4a60ee;
+    margin-right: 8px;
+}
+
+/* ----------CERTIFICATES SECTION---------- */
+#certificates {
+    padding: 40px 0;
+    background: #080808;
+}
+
+/* ----------MARKSHEETS SECTION---------- */
+#marksheets {
+    padding: 40px 0;
+    background: #0d0d0d;
+}
+
+/* ----------ACHIEVEMENTS SECTION---------- */
+#achievements {
+    padding: 40px 0;
+    background: #080808;
+}
+
+.achievement-card {
+    border: 2px solid #4a60ee;
+    box-shadow: 0 0 20px rgba(74, 96, 238, 0.3);
+}
+
+.achievement-card:hover {
+    box-shadow: 0 0 30px rgba(74, 96, 238, 0.5);
+}
+
+.achievement-card .year i {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+/* ----------CERTIFICATE GRID---------- */
+.cert-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ----------CERTIFICATE CARD---------- */
+.cert-card {
+    background: #262626;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(74, 96, 238, 0.2);
+}
+
+.cert-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.cert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.cert-card:hover .cert-image img {
+    transform: scale(1.05);
+}
+
+.cert-info {
+    padding: 16px;
+}
+
+.cert-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.cert-info .issuer {
+    color: #ababab;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.cert-info .issuer i {
+    color: #4a60ee;
+    margin-right: 6px;
+}
+
+.cert-info .year {
+    color: #4a60ee;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* ----------VIEW BUTTON---------- */
+.btn-view {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #4a60ee;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-view i {
+    margin-right: 6px;
+}
+
+.btn-view:hover {
+    background: #5b28f5;
+    transform: scale(1.05);
+}
+
+/* ----------BACK SECTION---------- */
+.back-section {
+    padding: 32px 0;
+    text-align: center;
+    background: #080808;
+}
+
+.back-section .btn i {
+    margin-right: 8px;
+}
+
+/* ----------TABLET RESPONSIVE STYLES (768px+)---------- */
+@media only screen and (min-width: 768px) {
+    .page-title {
+        padding: 50px 0 30px;
+    }
+
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+        padding-bottom: 15px;
+    }
+
+    .section-title i {
+        margin-right: 10px;
+    }
+
+    #certificates,
+    #marksheets,
+    #achievements {
+        padding: 50px 0;
+    }
+
+    .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 24px;
+    }
+
+    .cert-image {
+        height: 200px;
+    }
+
+    .cert-info {
+        padding: 20px;
+    }
+
+    .cert-info h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .cert-info .issuer {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .cert-info .year {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .btn-view {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .back-section {
+        padding: 40px 0;
+    }
+}
+
+/* ----------DESKTOP RESPONSIVE STYLES (1024px+)---------- */
+@media only screen and (min-width: 1024px) {
+    .page-title {
+        padding: 60px 0 40px;
+    }
+
+    .page-title h1 {
+        font-size: 42px;
+    }
+
+    .page-title p {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+        display: inline-block;
+    }
+
+    #certificates,
+    #marksheets,
+    #achievements {
+        padding: 60px 0;
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .cert-image {
+        height: 240px;
+    }
+
+    .cert-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cert-info .issuer {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .cert-info .year {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .btn-view {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .back-section {
+        padding: 40px 0;
+    }
+}
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.cert-card:hover .cert-image img {
+    transform: scale(1.05);
+}
+
+.cert-info {
+    padding: 20px;
+}
+
+.cert-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cert-info .issuer {
+    color: #ababab;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.cert-info .issuer i {
+    color: #4a60ee;
+    margin-right: 8px;
+}
+
+.cert-info .year {
+    color: #4a60ee;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* ----------VIEW BUTTON---------- */
+.btn-view {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #4a60ee;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-view i {
+    margin-right: 8px;
+}
+
+.btn-view:hover {
+    background: #5b28f5;
+    transform: scale(1.05);
+}
+
+/* ----------BACK SECTION---------- */
+.back-section {
+    padding: 40px 0;
+    text-align: center;
+    background: #080808;
+}
+
+.back-section .btn i {
+    margin-right: 10px;
+}
+
+/* ----------RESPONSIVE STYLES---------- */
+@media only screen and (max-width: 768px) {
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-title {
+        padding: 40px 0 30px;
+    }
+
+    .page-title h1 {
+        font-size: 28px;
+    }
+
+    .page-title p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    #certificates,
+    #marksheets {
+        padding: 40px 0;
+    }
+
+    .cert-image {
+        height: 180px;
+    }
+
+    .cert-info h3 {
+        font-size: 18px;
+    }
+}

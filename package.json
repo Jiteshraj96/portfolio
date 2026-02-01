@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-main",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo \"Build completed successfully!\""
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal"
+  ],
+  "author": "Jitesh Raj",
+  "license": "ISC"
+}
