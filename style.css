@@ -39,6 +39,10 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -61,10 +65,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #080808;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
     position: relative;
+    font-weight: 500;
 }
 
 nav ul li a::after {
@@ -467,10 +472,29 @@ nav ul {
     transform: translateX(0);
     transition: left 0.3s ease-in-out;
     z-index: 999;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul.show {
     left: 0;
+}
+
+nav .fa-bars {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav .fa-times {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
 }
 
 nav ul.show ~ .fa-bars {
